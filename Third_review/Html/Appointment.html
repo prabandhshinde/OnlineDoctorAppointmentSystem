@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Appointment</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+           let Appointment=[{time:"11:00",isSelected:0},{time:"11:15",isSelected:0},{time:"11:30",isSelected:0},{time:"11:45",isSelected:0}
+        ,{time:"12:00",isSelected:0},{time:"12:15",isSelected:0},{time:"12:30",isSelected:0},{time:"12:45",isSelected:0}
+    ,{time:"13:00",isSelected:0},{time:"13:15",isSelected:0},{time:"13:30",isSelected:0}];
+
+    //let Appointment=["11:00","11.15","11.30","11.45"]
+                function handler1()
+                {
+                    let btn="";
+                    //console.log(Appointment.length)
+                    for(var i=0;i<Appointment.length;i++)
+                    {
+                        if((i)%4==0)
+                        {
+                            btn+="<br><br>"
+                        }
+                       if(Appointment[i].isSelected==1)
+                        {
+                            btn+=`<button class="btn btn-danger">`+Appointment[i].time+`</button>&nbsp;&nbsp;`
+                        }
+                        //btn+=`<input type="button" value="`+Appointment[i].time+`"/>&nbsp;&nbsp;`
+                        if(Appointment[i].isSelected==0){
+                        btn+=`<button class="btn btn-info" id="i1" onclick="handler2(`+Appointment[i].time+`)" value="`+Appointment[i].time+`">`+Appointment[i].time+`</button>&nbsp;&nbsp;`
+                        }
+                    }
+                    document.getElementById("newDiv").innerHTML=btn;
+                }
+
+                function handler2(val)
+                {
+                    //let newtime=document.getElementById("i1").value;
+                    console.log(val)
+                    var ni;
+                    for(var i=0;i<Appointment.length;i++)
+                    {
+                        if(Appointment[i].time===newtime)
+                        {
+                            ni=i;
+                            break;
+                        }
+                    }
+                    Appointment[ni].isSelected=1;
+                    console.log(Appointment)
+                    this.handler1();
+                }
+
+        </script>
+    </head>
+    <body onload="handler1()">
+        <center>
+            <fieldset>
+                    <h1>Make Your Appointment</h1>
+                    <div id="newDiv" class="shadow p-3 mb-5 bg-body rounded"> 
+                    </div>
+            </fieldset>
+        </center>
+    </body>
+
+    <style>
+        fieldset{
+            background-color: rgb(199, 199, 255);
+        }
+        div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+    </style>
+
+</html>
