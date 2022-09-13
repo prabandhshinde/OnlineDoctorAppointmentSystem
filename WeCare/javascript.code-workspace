@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\Subject\\WPT\\JS\\javascript"
+		},
+		{
+			"path": "..\\..\\..\\Subject\\WPT\\HTML"
+		},
+		{
+			"path": "..\\..\\..\\Subject\\WPT\\JS"
+		},
+		{
+			"path": "..\\..\\..\\Subject\\WPT\\my-app"
+		},
+		{
+			"path": "..\\..\\..\\Subject\\WPT\\myexpresswebserver"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS"
+	}
+}
