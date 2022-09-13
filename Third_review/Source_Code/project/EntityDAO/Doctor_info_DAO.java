@@ -32,17 +32,19 @@ public class Doctor_info_DAO {
 		 return list;
 	 }
 	 
-	 public String addNewDoctor(Doctor_info doc)
-	 {
-		 doctor_repo.save(doc);
-		 return "Record Inserted";
-	 }
-	 
 	 public String addNewDoctor1(Doctor_info doc,Clinic_info clinic)
 	 {
 		 clinic_repo.save(clinic);
 		 doctor_repo.save(doc);
 		 return "Record Inserted";
+	 }
+	 
+	 
+	 public String DeleteDoctor(int id)
+	 {
+		 Doctor_info doc=doctor_repo.findById(id).get();
+		 doctor_repo.delete(doc);
+		 return "Record Deleted";
 	 }
 	
 }
