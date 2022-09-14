@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -47,7 +48,8 @@ public class Doctor_info {
 	private boolean is_valid;
 	
 	
-	@OneToOne(mappedBy = "doctor",cascade = CascadeType.ALL)
+	@OneToOne
+	@JoinColumn(name = "clinic_id",referencedColumnName = "clinic_id")
 	private Clinic_info clinic;
 
 	public int getDoctor_id() {

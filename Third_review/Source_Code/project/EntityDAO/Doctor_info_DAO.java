@@ -7,6 +7,7 @@ import org.springframework.stereotype.Repository;
 
 import project.Entity.Clinic_info;
 import project.Entity.Doctor_info;
+import project.Entity.Patient_info;
 import project.repositories.Clinic_repository;
 import project.repositories.Doctor_repository;
 
@@ -46,5 +47,33 @@ public class Doctor_info_DAO {
 		 doctor_repo.delete(doc);
 		 return "Record Deleted";
 	 }
+	 
+	 public String updateDoctor(Doctor_info doc)
+	 {
+		 Doctor_info doctor=doctor_repo.findById(doc.getDoctor_id()).get();
+		 doctor.setClinic(doc.getClinic());
+		 doctor.setEmail(doc.getEmail());
+		 doctor.setMob_number(doc.getMob_number());
+		 doctor.setLicence_number(doc.getLicence_number());
+		 doctor.setDoctor_id(doc.getDoctor_id());
+		 doctor.setFirst_name(doc.getFirst_name());
+		 doctor.setLast_name(doc.getLast_name());
+		 doctor.setImage(doc.getImage());
+		 doctor.setIs_valid(doc.isIs_valid());
+		 doctor.setPassing_year(doc.getPassing_year());
+		 doctor.setUniversity(doc.getUniversity());
+		 doctor.setSpecilization(doc.getSpecilization());
+		 doctor.setLicence_copy(doc.getLicence_copy());
+		 
+		 doctor_repo.save(doctor);
+		 return "Record Updated";
+	 }
+	 
+	 public String forgetpassdoctor(int id,String newpassword)
+		{
+		 		Doctor_info doct =doctor_repo.findById(id).get();
+		 		doct.setPassword(newpassword);
+		 		return "password changed";
+		}
 	
 }

@@ -61,4 +61,11 @@ public class Patient_info_DAO {
 		}
 	}
 	
+	public String forgetpasspatient(int id,String newpassword)
+	{
+		Patient_info patient=repo.findById(id).get();
+		patient.setPassword(newpassword);
+		return "password changed";
+	}
+	
 }

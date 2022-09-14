@@ -33,8 +33,6 @@ public class Clinic_info {
 	@Column
 	private long contact_no;
 	
-	@OneToOne
-	private Doctor_info doctor;
 	
 	
 	
@@ -92,13 +90,5 @@ public class Clinic_info {
 	public void setContact_no(long contact_no) {
 		this.contact_no = contact_no;
 	}
-	public Doctor_info getDoctor() {
-		return doctor;
-	}
-	public void setDoctor(Doctor_info doctor) {
-		this.doctor = doctor;
-	}
-	
-	
 
 }
