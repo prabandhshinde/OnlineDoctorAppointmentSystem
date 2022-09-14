@@ -41,7 +41,7 @@ export default function LogIn()
                             </div>
           
                             <div className="pt-1 mb-4">
-                              <button className="btn btn-dark btn-lg btn-block" type="button">Sign In</button>
+                              <button className="btn btn-dark btn-lg btn-block" type="button" >Sign In</button>
                             </div>
           
                             <a className="small text-muted" href="#!">Forgot password?</a>

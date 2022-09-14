@@ -9,7 +9,7 @@ export default function DrList()
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">WeCare</a></h1>
+      <h1 class="logo me-auto"><a href="#">WeCare</a></h1>
       
      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"/></a>
 
@@ -29,13 +29,6 @@ export default function DrList()
   
   
   <main id="main">
-    
-
-    \
-
-    
-
-   
     <section id="doctors" class="doctors">
       <div class="container">
 
