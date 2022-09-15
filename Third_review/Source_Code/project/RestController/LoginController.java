@@ -54,7 +54,7 @@ public class LoginController {
 	}
 	
 	
-	@PostMapping("/login/patient/{mob}/{password}")
+	@PostMapping("/login/patient")
 	public String patientLogin(@RequestBody LoginModel model)
 	{
 		String status="";
@@ -105,6 +105,27 @@ public class LoginController {
 			{
 				status="incorrect username";
 			}
+		}
+		return status;
+	}
+	
+	@PostMapping("/login1/doctor")
+	public String loginnew(@RequestBody LoginModel model)
+	{
+		long user=9665340359l;
+		String status="";
+		if(user==model.getMob())
+		{
+					if("Ankit".equals(model.getPassword()))
+					{
+						status=""+1;	
+					}else
+					{
+						status="password incorrect";	
+					}
+		}else
+		{
+			status="incorrect username";
 		}
 		return status;
 	}
