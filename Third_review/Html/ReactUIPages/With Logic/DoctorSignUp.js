@@ -30,7 +30,8 @@ export default function DoctorSignUp()
         let navigate = useNavigate();
 
 
-    function addDataHandler(){
+    function addDataHandler(event){
+      event.preventDefault();
             var doctor={first_name:firstname,
             last_name:lastname,
             mob_number:mobnumber,
@@ -65,6 +66,10 @@ export default function DoctorSignUp()
                 }else{
                     alert("Invalid Data format")
                 }
+            })
+            .catch(e=>{
+              console.log(e)
+              alert("Something went Wrong Try Again")
             })
     }
   
