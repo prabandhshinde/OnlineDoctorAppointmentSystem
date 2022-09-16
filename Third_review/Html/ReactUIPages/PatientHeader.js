@@ -29,7 +29,7 @@ export default function PatientHeader() {
                 </a>
               </li>
               <li>
-                <a class="nav-link scrollto active" href="#hero">
+                <a class="nav-link scrollto active" href="/PatientHistory">
                   History
                 </a>
               </li>
@@ -38,6 +38,10 @@ export default function PatientHeader() {
 
           <a href="/DrList" class="appointment-btn scrollto">
             <span class="d-none d-md-inline">Book an Appointment</span>
+          </a>
+
+          <a href="/" class="appointment-btn scrollto">
+            <span class="d-none d-md-inline">LogOut</span>
           </a>
         </div>
       </header>
