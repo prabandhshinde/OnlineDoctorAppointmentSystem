@@ -36,7 +36,7 @@ public class Doctor {
 	
 	//-------------------------------------------dr has a clinic_address relationship
 	
-	@OneToOne(cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	@JoinColumn(name = "clinic_addr_id",referencedColumnName = "addr_id")
 	private clinic_Address addr;
 

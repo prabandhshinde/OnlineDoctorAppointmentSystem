@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -25,6 +26,7 @@ public class Created_Sub_Slot_Saver {
 	private boolean is_booked;
 	
 	@ManyToOne
+	@JoinColumn(name = "dr_scheduled_slot_id", referencedColumnName = "slot_id")
 	private doctorScheduledSlots dr_scheduled_slot;
 
 	public Created_Sub_Slot_Saver() {
@@ -32,8 +34,9 @@ public class Created_Sub_Slot_Saver {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 	public Created_Sub_Slot_Saver(Time slot_start_time, Time slot_end_time, long ref_doctor_id,
-			long ref_patient_id, boolean is_booked) {
+			long ref_patient_id, boolean is_booked, doctorScheduledSlots dr_scheduled_slot) {
 		super();
 		//this.created_slot_id = created_slot_id;
 		this.slot_start_time = slot_start_time;
@@ -41,8 +44,9 @@ public class Created_Sub_Slot_Saver {
 		this.ref_doctor_id = ref_doctor_id;
 		this.ref_patient_id = ref_patient_id;
 		this.is_booked = is_booked;
-		//this.dr_scheduled_slot = dr_scheduled_slot;
+		this.dr_scheduled_slot = dr_scheduled_slot;
 	}
+
 
 	public long getCreated_slot_id() {
 		return created_slot_id;

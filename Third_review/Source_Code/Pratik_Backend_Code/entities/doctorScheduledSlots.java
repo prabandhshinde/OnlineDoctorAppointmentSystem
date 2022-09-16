@@ -4,7 +4,9 @@ import java.sql.Date;
 import java.sql.Time;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -28,8 +30,8 @@ public class doctorScheduledSlots {
 	private Time avg_patient_check_time;
 	private long doctor_id_fk;
 	
-	@OneToMany(mappedBy = "dr_scheduled_slot")
-	List<Created_Sub_Slot_Saver> slot_list;
+	@OneToMany(mappedBy = "dr_scheduled_slot",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+	private List<Created_Sub_Slot_Saver> slot_list;
 	
 	public doctorScheduledSlots() {
 		super();
@@ -58,10 +60,10 @@ public class doctorScheduledSlots {
 //		this.slot_list.add(slot2);
 //		this.slot_list.add(slot3);
 		
-		for(int i=0; i<3;i++)
-		{
-			
-		}
+//		for(int i=0; i<3;i++)
+//		{
+//			
+//		}
 		
 		
 	}
