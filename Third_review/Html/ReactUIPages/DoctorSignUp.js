@@ -156,40 +156,21 @@ export default function DoctorSignUp()
             <div class="form-row">
               <div class="form-group">
                 <label for="state">State :</label>
-                <div class="form-select">
-                  <select name="state" id="state">
-                    <option value=""></option>
-                    <option value="mh">Maharashtra</option>
-                    <option value="cg">Chhattisgarh</option>
-                  </select>
-                  <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                </div>
+                <input type="text" name="state" id="state"
+                placeholder="Maharashtra" required/>
               </div>
 
               <div class="form-group">
                 <label for="district">District :</label>
-                <div class="form-select">
-                  <select name="district" id="district">
-                    <option value=""></option>
-                    <option value="pune">Pune</option>
-                    <option value="mumbai">Mumbai</option>
-                  </select>
-                  <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                </div>
+                <input type="text" name="district" id="district"
+                placeholder="Pune" required/>              
               </div>
-
 
 
               <div class="form-group">
                 <label for="city">City :</label>
-                <div class="form-select">
-                  <select name="city" id="city">
-                    <option value=""></option>
-                    <option value="losangeles">Los Angeles</option>
-                    <option value="washington">Washington</option>
-                  </select>
-                  <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                </div>
+                <input type="text" name="city" id="city"
+                placeholder="Pune" required/>              
               </div>
             </div>
 
