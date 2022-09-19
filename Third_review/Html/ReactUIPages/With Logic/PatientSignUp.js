@@ -2,12 +2,13 @@ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router";
 import { useState } from "react";
+import HomeHeader from "./HomeHeader";
 
 export default function PatientSignUp() {
 
     let[fname,setFname]=useState("")
     let[lname,setLname]=useState("")
-    let[mob,setMob]=useState("")
+    let[mob,setMob]=useState(0)
     let[password,setPassword]=useState("")
     let[dob,setDob]=useState("")
     let[gender,setGender]=useState("")
@@ -44,20 +45,21 @@ export default function PatientSignUp() {
 
   return (
     <>
+    <HomeHeader></HomeHeader>
       <body>
-        <div class="main">
-          <div class="container">
-            <div class="signup-content">
-              <div class="signup-img">
+        <div className="main">
+          <div className="container">
+            <div className="signup-content">
+              <div className="signup-img">
                 <img src="/assets/img/reg_form_images/signup.webp" alt="" />
               </div>
 
-              <div class="signup-form">
+              <div className="signup-form">
                   <h2>
                     <u>patient registration form</u>
                   </h2>
-                  <div class="form-row">
-                    <div class="form-group">
+                  <div className="form-row">
+                    <div className="form-group">
                       <label for="fname">First Name :</label>
                       <input
                         type="text"
@@ -68,7 +70,7 @@ export default function PatientSignUp() {
                         required onChange={(event)=>{setFname(event.target.value)}}
                       />
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <label for="last_name">Last Name :</label>
                       <input
                         type="text"
@@ -80,8 +82,8 @@ export default function PatientSignUp() {
                       />
                     </div>
                   </div>
-                  <div class="signup-form"></div>
-                  <div class="form-group">
+                  <div className="signup-form"></div>
+                  <div className="form-group">
                     <label for="mobile">Mobile Number :</label>
                     <input
                       type="number"
@@ -94,51 +96,51 @@ export default function PatientSignUp() {
                     />
                     <br />
                   </div>
-                  <div class="signup-form"></div>
+                  <div className="signup-form"></div>
 
-                  <div class="form-radio">
-                    <label for="gender" class="radio-label">
+                  <div className="form-radio">
+                    <label for="gender" className="radio-label">
                       Gender :
                     </label>
-                    <div class="form-radio-item">
+                    <div className="form-radio-item">
                       <input type="radio" name="gender" id="male" value="M" onChange={(event)=>{setGender(event.target.value)}}/>
                       <label for="male">Male</label>
-                      <span class="check"></span>
+                      <span className="check"></span>
                     </div>
-                    <div class="form-radio-item">
+                    <div className="form-radio-item">
                       <input type="radio" name="gender" id="female" value="F" onChange={(event)=>{setGender(event.target.value)}}/>
                       <label for="female">Female</label>
-                      <span class="check"></span>
+                      <span className="check"></span>
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div className="form-group">
                     <label for="birth_date">Date Of Birth :</label>
                     <input type="date" name="birth_date" id="birth_date" onChange={(event)=>{setDob(event.target.value)}}/>
                   </div>
 
-                  <div class="form-group">
+                  <div className="form-group">
                     <label for="name">Create Your Password :</label>
                     <input type="password" name="password" id="name" required onChange={(event)=>{setPassword(event.target.value)}}/>
                   </div>
 
-                  <div class="form-group">
+                  <div className="form-group">
                     <label for="name">Blood Group :</label>
                     <input type="text" name="blood_group" id="state" required onChange={(event)=>{setBlood(event.target.value)}}/>
                   </div>
 
-                  <div class="form-submit">
+                  <div className="form-submit">
                     <input
                       type="button"
                       value="Reset All"
-                      class="submit"
+                      className="submit"
                       name="reset"
                       id="reset"
                     />
                     <input
                       type="button"
                       value="Submit Form"
-                      class="submit"
+                      className="submit"
                       name="submit"
                       id="submit" 
                       onClick={addDataHandler}

@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useNavigate } from "react-router";
 import { useState } from "react";
+import HomeHeader from "./HomeHeader";
 
 export default function DoctorSignUp()
 {
@@ -76,6 +77,7 @@ export default function DoctorSignUp()
 
     return(
         <>
+        <HomeHeader></HomeHeader>
   <div className="main">
     <div className="container">
       <div className="signup-content">
@@ -159,7 +161,7 @@ export default function DoctorSignUp()
             </div>
             <br/>
             <div className="form-group">
-              <label htmlFor="image">License Copy :</label>
+              <label htmlFor="image">Image :</label>
               <input type="file" name="image" id="image" required onBlur={(event)=>{setImage(event.target.value)}} />
             </div>
             </div>
@@ -205,41 +207,19 @@ export default function DoctorSignUp()
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="state">State :</label>
-                <div className="form-select">
-                  <select name="state" id="state" onBlur={(event)=>{setState(event.target.value)}}>
-                    <option value=""></option>
-                    <option value="mh">Maharashtra</option>
-                    <option value="cg">Chhattisgarh</option>
-                  </select>
-                  <span className="select-icon"><i className="zmdi zmdi-chevron-down"></i></span>
-                </div>
+                  <input type="text" name="state" id="state" onBlur={(event)=>{setState(event.target.value)}}/>
               </div>
 
               <div className="form-group">
                 <label htmlFor="district">District :</label>
-                <div className="form-select">
-                  <select name="district" id="district" onBlur={(event)=>{setDistrict(event.target.value)}}>
-                    <option value=""></option>
-                    <option value="pune">Pune</option>
-                    <option value="mumbai">Mumbai</option>
-                  </select>
-                  <span className="select-icon"><i className="zmdi zmdi-chevron-down"></i></span>
-                </div>
+                  <input type="text" name="district" id="district" onBlur={(event)=>{setDistrict(event.target.value)}}/>
               </div>
 
 
 
               <div className="form-group">
                 <label htmlFor="city">City :</label>
-                <div className="form-select">
-                  <select name="city" id="city" onBlur={(event)=>{setCity(event.target.value)}}>
-                    <option value=""></option>
-                    <option value="losangeles">Los Angeles</option>
-                    <option value="washington">Washington</option>
-                  </select>
-                  <span className="select-icon"><i className="zmdi zmdi-chevron-down"></i></span>
-                </div>
-              </div>
+                  <input type="text" name="city" id="city" onBlur={(event)=>{setCity(event.target.value)}}/>
             </div>
 
             <div className="form-row">
@@ -254,10 +234,9 @@ export default function DoctorSignUp()
               <div className="form-group">
 
               </div>
-
+          </div>
               <br />
             </div>
-
 
             
             
