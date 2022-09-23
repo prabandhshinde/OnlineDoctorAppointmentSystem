@@ -26,16 +26,11 @@ export default function DoctorHeader() {
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link scrollto active" href="#">
-                    Today's Slot
+                  <a class="nav-link scrollto active" href="/doctor/history">
+                    Slots
                   </a>
                 </li>
 
-                <li>
-                  <a class="nav-link scrollto active" href="#">
-                    History
-                  </a>
-                </li>
 
               </ul>
             </nav>

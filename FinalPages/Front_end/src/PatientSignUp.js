@@ -14,15 +14,17 @@ export default function PatientSignUp() {
     let[gender,setGender]=useState("")
     let[blood,setBlood]=useState("")
     let navigate = useNavigate();
+   
 
     function addDataHandler(event){
       event.preventDefault();
+      var newdate=new Date(dob);
       var patient={
         first_name:fname,
         last_name:lname,
         mob_number:mob,
         password:password,
-        date_of_birth:dob,
+        date_of_birth:newdate,
         gender:gender,
         blood_group:blood
       }
