@@ -49,11 +49,13 @@ export default function Appointment()
         let btn;
         console.log(appointment1);
         btn = appointment1.map((element, index) => {
-            if (element.is_Booked === true) {
-                return ((<Button variant={"outline-danger"} disabled={true} key={index}>{element.slot_time}</Button>))
+            if (element.is_booked === true) {
+                console.log(element.slot_start_time);
+                return ((<Button variant={"outline-danger"} disabled={true} key={index}>{element.slot_start_time}</Button>))
             }
-            if (element.is_Booked === false) {
-                return (<Button key={index} onClick={handler2} value={element.slot_time}>{element.slot_time}</Button>)
+            if (element.is_booked === false) {
+                console.log(element.slot_start_time);
+                return (<Button key={index} onClick={handler2} value={element.slot_start_time}>{element.slot_start_time}</Button>)
             }
         })
         setBtn(btn);
@@ -65,16 +67,16 @@ export default function Appointment()
         let newApp = appointment1;
         for(var i=0;i<newApp.length;i++)
         {
-            if(newApp[i].slot_time===val)
+            if(newApp[i].slot_start_time===val)
             {
                 console.log(val);
                 localStorage.setItem('slot_time',val);
-                newApp[i].is_Booked=true;
+                newApp[i].is_booked=true;
                 break;
             }
         }
         navigate("/confirm");
-        setAppointment(newApp);
+        //setAppointment(newApp);
         console.log(appointment1)
     }
 

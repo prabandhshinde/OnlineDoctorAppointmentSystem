@@ -13,7 +13,7 @@ export default function DrLists(props) {
   function handler1()
   {
     //dispatch({type:"doctor_select",payload:{doctor_id:id,clinic_id:clinic_id}})
-    sessionStorage.setItem('doctor_select',JSON.stringify({doctor_id:id,clinic_id:clinic_id}))
+    sessionStorage.setItem('doctor_select',JSON.stringify({doctor_id:id,clinic_id:clinic_id,clinic_name:clinic,doctor_name:name}))
     navigate('/Appointment');
   }
 

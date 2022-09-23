@@ -163,6 +163,6 @@ export default function DoctorProfile()
 else
 {
     alert('Please Login First');
-    navigate('/login')
+    window.location='/login';
 }
 }

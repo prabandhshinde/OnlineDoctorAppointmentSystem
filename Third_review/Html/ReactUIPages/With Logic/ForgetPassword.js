@@ -13,6 +13,8 @@ export default function ForgetPassword()
 
     function PasswordHandler(e)
     {
+
+          console.log(role+" "+mob+" "+password)
             e.preventDefault();
             if(role==="Doctor"){
             axios.post('http://localhost:8080/wecare/forgetpassword/doctor/',{mob,password})

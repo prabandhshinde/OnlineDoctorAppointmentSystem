@@ -4,10 +4,7 @@ export default function DoctorHeader() {
         <div id="topbar" className="d-flex align-items-center fixed-top">
           <div className="container d-flex justify-content-between">
             <div className="contact-info d-flex align-items-center">
-              <i className="bi bi-envelope"></i>{" "}
-              <a href="mailto:contact@example.com">suryakantdhumale@gmail.com</a>
-              <i className="bi bi-phone"></i> +91 9049 181 054
-            </div>
+           </div>
             <div className="d-none d-lg-flex social-links align-items-center"></div>
           </div>
         </div>
@@ -29,16 +26,11 @@ export default function DoctorHeader() {
                   </a>
                 </li>
                 <li>
-                  <a class="nav-link scrollto active" href="#">
-                    Today's Slot
+                  <a class="nav-link scrollto active" href="/doctor/history">
+                    Slots
                   </a>
                 </li>
 
-                <li>
-                  <a class="nav-link scrollto active" href="#">
-                    History
-                  </a>
-                </li>
 
               </ul>
             </nav>

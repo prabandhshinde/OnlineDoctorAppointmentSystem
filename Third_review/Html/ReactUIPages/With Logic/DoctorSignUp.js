@@ -30,16 +30,22 @@ export default function DoctorSignUp()
         let[contactno,setContactno]=useState("")
         let navigate = useNavigate();
 
+        var newdate=new Date();
+        
 
     function addDataHandler(event){
       event.preventDefault();
+      newdate.setDate(1);
+      newdate.setMonth(0);
+      newdate.setFullYear(passingyear);
+            console.log(passingyear);
             var doctor={first_name:firstname,
             last_name:lastname,
             mob_number:mobnumber,
             qualification:qualification,
             university:university,
             specilization:specilization,
-            passing_year:passingyear,
+            passing_year:newdate,
             licence_number:licencenumber,
             email:email,
             password:password,
