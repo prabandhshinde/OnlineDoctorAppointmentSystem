@@ -20,7 +20,7 @@
  
 <h2 align="center"> Project Contributors </h2>
 <div align="center">
- <img src="https://contributors-img.web.app/image?repo=kadampritam17/E-Pariksha" /></h5>
+ <img src="https://contributors-img.web.app/image?repo=prabandhshinde/OnlineDoctorAppointmentSystem" /></h5>
 <div><h6>
 <div align="center">
            	  <i class="bx bx-chevron-right"></i> <a href="https://github.com/prabandhshinde">| Prabandh S |</a>
