@@ -2,6 +2,17 @@
 
 <h1 align="center"> > Online Doctor Appointment System < </h1>
 <h3 align="center"> WeCare </h3>
+<h3></h3>
+<ol>
+	<li>Clone projct using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git</li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ol>
 
 
 <hr>
