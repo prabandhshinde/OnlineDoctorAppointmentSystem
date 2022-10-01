@@ -1,19 +1,17 @@
 import PatientHeader from "./PatientHeader";
-const myStyle={
-  backgroundImage: 
-  "url('assets/img/login.jpg')",
-      
-         fontSize:'50px',
-         backgroundSize: 'cover',
-         backgroundRepeat: 'no-repeat',};
+const myStyle = {
+  backgroundImage: "url('assets/img/login.jpg')",
+
+  fontSize: "50px",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+};
 export default function PatientProfile() {
-  
   return (
     <div>
       <PatientHeader></PatientHeader>
-      
-      <div>
 
+      <div>
         <main id="main">
           <section id="doctors" class="doctors">
             <div class="container">
@@ -22,7 +20,7 @@ export default function PatientProfile() {
                 <br />
                 <br />
                 <br />
-                <h2>Patioent's Profile</h2>
+                <h2>Patient's Profile</h2>
               </div>
             </div>
             <div class="row">
@@ -62,11 +60,11 @@ export default function PatientProfile() {
                 </div>
               </div>
             </div>
-            <div style={{"textAlign":"center"}}>
-            <a href="/DrList" class="appointment-btn scrollto">
-                      <span class="d-none d-md-inline">Edit Profile</span>
-                      </a>
-            </div>  
+            <div style={{ textAlign: "center" }}>
+              <a href="/DrList" class="appointment-btn scrollto">
+                <span class="d-none d-md-inline">Edit Profile</span>
+              </a>
+            </div>
           </section>
         </main>
       </div>
