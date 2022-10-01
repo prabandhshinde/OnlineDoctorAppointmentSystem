@@ -2,7 +2,12 @@
 
 <h1 align="center"> > Online Doctor Appointment System < </h1>
 <h3 align="center"> WeCare </h3>
-<h3></h3>
+<hr>
+<h2>Project Description</h2>
+<p>The purpose of the project is to build a web-based application which provides a patient to book their appointment with the doctor. Doctor has to create his profile on web application as per his speciality and it will be visible for patients. System provides interface for doctor where doctor can manage their slots also the system will help for generating the slots according to doctor’s availability in hospital and average time required for patient checking. Patient can select the doctor available nearer location according to his symptoms, doctor’s speciality and they can book their slots. Only registered patients can book their slots, to book time slot the patient must pay the charges of doctor in advance. After the appointment is booked, patient will get booking id as a confirmation. The already booked slot will be marked and will not be available for the others. This system also allows patient to reschedule their appointments.
+</p>
+<hr>
+<h2>How to Use..??</h2>
 <ol>
 	<li>Clone projct using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git</li>
 	<li></li>
