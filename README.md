@@ -8,15 +8,21 @@
 </p>
 <hr>
 <h2>How to Use..??</h2>
+<h3>Below steps will help you to run project locally in your PC :</h3>
 <ol>
-	<li>Clone projct using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git</li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li>Clone projct using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git .</li>
+	<li>Open folder finalproject.</li>
+	<li>From Database folder import wecare.sql file in MySQL database.</li>
+	<li>Use command "mysql -u USER -p DATABASE_NAME < PATH/TO/FILE.sql" (Ensure path save in Environmental Variable..).</li>
+	<li>From backend folder extract wecare folder. </li>
+	<li>Import project in spring boot.</li>
+	<li>In project, make changes in "src/main/resources/application.properties" for database connectivity.</li>
+	<li>Run Project as java application.</li>
+	<li>From frontend folder extract wecare folder.</li>
+	<li>Open folder in visual studio code.</li>
+	<li>Run server with command npm start.</li>
+	<li>You will be on home page of WeCare App.</li>
+	<li>Project ready to use.</li>
 </ol>
 
 
@@ -44,5 +50,5 @@
 	<i class="bx bx-chevron-right"></i> <a href="https://github.com/ankitjadhav0609">| Ankit J |</a>
 <i class="bx bx-chevron-right"></i> <a href="https://github.com/AsthaDubey17">| Astha D |</a>
 <i class="bx bx-chevron-right"></i> <a href="https://github.com/sumedhzende19">| Sumedh Z |</a>
-<i class="bx bx-chevron-right"></i> <a href="https://github.com/suryakantdhumale">| Suryakant D |</a>
+<i class="bx bx-chevron-right"></i> <a href="https://github.com/surykantdhumale">| Suryakant D |</a>
 </div> 
