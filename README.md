@@ -24,9 +24,37 @@
 	<li>You will be on home page of WeCare App.</li>
 	<li>Project ready to use.</li>
 </ol>
+<hr>
+
+<h2>Dependencies Used</h2>
+<h3>Below Dependencies used in Spring Boot:</h3>
+<ol>
+	<li>MySQL Driver</li>
+	<li>Spring Boot DevTools</li>
+	<li>Spring Configuration Processor</li>
+	<li>Spring Data JPA</li>
+	<li>Spring Web</li>
+</ol>
+<br/>
+<h3>Below Dependencies used in ReactJS:</h3>
+<ol>
+	<li>Axios</li>      
+	<li>bootstrap</li>
+	<li>react-bootstrap</li>
+	<li>redux</li>
+	<li>react-redux</li>
+	<li>react-dom</li>
+	<li>react-router-dom</li>
+</ol>
 
 
 <hr>
+
+
+
+
+
+
 <h2 align="center"> 💻 Technology Used </h2>
 <p align="center">
  
