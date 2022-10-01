@@ -9,7 +9,6 @@ export default function DrTimeSlot()
 {
 
     let[startdate,setStartdate]=useState("")
-    let[enddate,setEnddate]=useState("")
     let[starttime,setStarttime]=useState("")
     let[endtime,setEndtime]=useState("")
     let[avgtime,setAvgtime]=useState("")
@@ -20,15 +19,14 @@ export default function DrTimeSlot()
 
       const slot={
         start_date:startdate,
-        end_date:enddate,
         start_time:starttime,
         end_time:endtime,
         buffer_time:buffertime,
         avg_patient_check_time:avgtime,
-        doctor_id_fk:sessionStorage.getItem('doctorlogin').doctor_id
+        doctor_id_fk:JSON.parse(sessionStorage.getItem('doctorlogin')).doctor_id
       }
 
-      axios.post('http://localhost:8080/wecare/drslot',slot)
+      axios.post('http://localhost:8080/wecare/add_doctor_scheduling_slot',slot)
       .then(Response=>{
           if(Response.status===200)
           {
@@ -65,7 +63,7 @@ export default function DrTimeSlot()
 
               <div className="form-row">
                 <div className="form-group">
-                  <label htmlFor="name">Start Date :</label>
+                  <label htmlFor="name">Slot Date :</label>
                   <input
                     type="date"
                     min="09/13/2022"
@@ -73,17 +71,6 @@ export default function DrTimeSlot()
                     id="end_date"
                     required
                     onBlur={(e)=>{setStartdate(e.target.value)}}
-                  />
-                </div>
-                <div className="form-group">
-                  <label htmlFor="address">End Date :</label>
-                  <input
-                    type="date"
-                    name="end_date"
-                    id="end_date"
-                    placeholder="12:00 AM"
-                    required
-                    onBlur={(e)=>{setEnddate(e.target.value)}}
                   />
                 </div>
               </div>

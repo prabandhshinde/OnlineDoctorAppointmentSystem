@@ -76,7 +76,7 @@ export default function Appointment()
             }
         }
         navigate("/confirm");
-        setAppointment(newApp);
+        //setAppointment(newApp);
         console.log(appointment1)
     }
 

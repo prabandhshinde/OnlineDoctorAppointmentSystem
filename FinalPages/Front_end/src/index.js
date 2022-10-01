@@ -19,6 +19,7 @@ import Logout from './Logout';
 import Confirm from './Confirm';
 import DoctorProfile from './DoctorProfile';
 import PatientHistory from './PatientHistory';
+import DoctorDailyAppointment from './DoctorDailyAppointment';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -42,6 +43,7 @@ root.render(
       <Route path='/confirm' element={<Confirm/>}></Route>
       <Route path='/doctor/profile' element={<DoctorProfile/>}></Route>
       <Route path='/patient/history' element={<PatientHistory/>}></Route>
+      <Route path='/doctor/history' element={<DoctorDailyAppointment/>}></Route>
     </Routes>
     </Provider>
 </BrowserRouter>

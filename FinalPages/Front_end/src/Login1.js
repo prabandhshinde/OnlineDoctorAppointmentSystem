@@ -75,13 +75,17 @@ export default function Login1()
                               <span className="h1 fw-bold mb-0" style={{"text-align":"center"}}>Sign In</span>
                             </div>
           
-                            
-                              <div className="form-radio-item">
-                                  <label htmlFor="radio"> Doctor </label>  <input type="radio" id="radio" name="r1" style={{"margin-right":"130px"}} value="Doctor" onClick={(event=>{setRole(event.target.value);console.log(role)})}/>
-                              </div>
-                              <div className="form-radio-item">
-                                  <label htmlFor="radio1"> Patient </label> <input type="radio" id="radio1" name="r1"  style={{"margin-right":"130px;"}} value="Patient" onClick={(event=>{setRole(event.target.value);console.log(role)})}/>
-                                </div>  
+                            <div className="form-radio-item">
+                                    <label for="radio"> Doctor </label>
+                                    <input type="radio" name="r1" id="radio" value="Doctor" onClick={(event=>{setRole(event.target.value);console.log(role)})}/>
+                                    <span className="check"></span>
+                            </div>
+
+                            <div className="form-radio-item">
+                                    <label for="radio1"> Patient </label>
+                                    <input type="radio" name="r1" id="radio1" value="Patient" onClick={(event=>{setRole(event.target.value);console.log(role)})}/>
+                                    <span className="check"></span>
+                            </div>
           
                             <div className="form-outline mb-4">
                               <input type="email" id="form2Example17" name="uname" placeholder=" Email/Mobile Number "className="form-control form-control-lg" onBlur={(e)=>{setMob(e.target.value)}}/>
