@@ -10,7 +10,7 @@
 <h2>How to Use..??</h2>
 <h3>Below steps will help you to run project locally in your PC :</h3>
 <ol>
-	<li>Clone projct using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git .</li>
+	<li>Clone project using link in git - https://github.com/prabandhshinde/OnlineDoctorAppointmentSystem.git .</li>
 	<li>Open folder finalproject.</li>
 	<li>From Database folder import wecare.sql file in MySQL database.</li>
 	<li>Use command "mysql -u USER -p DATABASE_NAME < PATH/TO/FILE.sql" (Ensure path save in Environmental Variable..).</li>
