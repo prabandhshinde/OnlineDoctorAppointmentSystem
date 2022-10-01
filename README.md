@@ -1,4 +1,4 @@
-# GroupNumber4..!!
+<h3># GroupNumber4..!!</h3>
 
 <h1 align="center"> > Online Doctor Appointment System < </h1>
 <h3 align="center"> WeCare </h3>
@@ -20,8 +20,13 @@
  
 <h2 align="center"> Project Contributors </h2>
 <div align="center">
- <img src="https://contributors-img.web.app/image?repo=prabandhshinde/OnlineDoctorAppointmentSystem" /></h5>
+	<img src="https://contributors-img.web.app/image?repo=prabandhshinde/OnlineDoctorAppointmentSystem" /></h5>
 <div><h6>
 <div align="center">
-           	  <i class="bx bx-chevron-right"></i> <a href="https://github.com/prabandhshinde">| Prabandh S |</a>
-            </div> 
+	<i class="bx bx-chevron-right"></i> <a href="https://github.com/prabandhshinde">| Prabandh S |</a>
+	<i class="bx bx-chevron-right"></i> <a href="https://github.com/alhatpratik">| Pratik A |</a>
+	<i class="bx bx-chevron-right"></i> <a href="https://github.com/ankitjadhav0609">| Ankit J |</a>
+<i class="bx bx-chevron-right"></i> <a href="https://github.com/AsthaDubey17">| Astha D |</a>
+<i class="bx bx-chevron-right"></i> <a href="https://github.com/sumedhzende19">| Sumedh Z |</a>
+<i class="bx bx-chevron-right"></i> <a href="https://github.com/suryakantdhumale">| Suryakant D |</a>
+</div> 
