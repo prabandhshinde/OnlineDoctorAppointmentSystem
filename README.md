@@ -26,6 +26,19 @@
 </ol>
 <hr>
 
+<h2 align="center"> 💻 Technology Used </h2>
+<p align="center">
+ 
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/java/java-plain.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg">
+<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-plain.svg">
+</p>
+ <hr>
+
 <h2>Dependencies Used</h2>
 <h3>Below Dependencies used in Spring Boot:</h3>
 <ol>
@@ -50,23 +63,6 @@
 
 <hr>
 
-
-
-
-
-
-<h2 align="center"> 💻 Technology Used </h2>
-<p align="center">
- 
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/java/java-plain.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-plain.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-plain.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg">
-<img height="40" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-plain.svg">
-</p>
- <hr>
  
 <h2 align="center"> Project Contributors </h2>
 <div align="center">
